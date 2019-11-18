@@ -69,8 +69,8 @@ public class SQLDemo {
                     temp.append(" ");
                 }
                 if (temp.indexOf("cursor") == -1 || temp.indexOf(";") != -1) {
-                    if (temp.indexOf("cursor") != -1) {
-                        System.out.println(temp);
+                    if (temp.indexOf("cursor") != -1&&temp.indexOf("select")!=-1) {
+                        System.out.println(temp.substring(temp.indexOf("select")));
                     }
                     temp.delete(0, temp.length());
                 }
