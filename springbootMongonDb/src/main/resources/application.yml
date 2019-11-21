@@ -1,0 +1,6 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://dbjfowner:dbjfowner.pwd@10.124.143.240:38001/dbjf
+server:
+  port: 1234
